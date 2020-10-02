@@ -1,0 +1,304 @@
+
+.wrapper{
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    margin: 50px auto;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+    padding: 35px;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+}
+
+.wrapper .title{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #0d322f;
+    text-align: center;
+    /*background: linear-gradient(to right, #d6b989 20%, #d6b989  40%, #0d322f 60%, #0d322f 80%) no-repeat;*/
+    /*background-size:  100%;*/
+    /*border-radius: 50px;*/
+
+}
+
+.wrapper .form{
+    width: 100%;
+}
+
+.wrapper .form .inputfield .input{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .form .inputfield label {
+    width: 200px;
+    color: #060606;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.wrapper .form .inputfield .input {
+    width: 100%;
+    outline: none;
+    border: 1px solid #0d322f;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+.wrapper .form .custom_select .input{
+    width: 70%;
+    outline: none;
+    border: 1px solid #0d322f;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .custom_select{
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+.wrapper .form .inputfield .custom_select:before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+}
+
+.wrapper .form  .custom_select select{
+    -webkit-appearance: none;
+    -moz-appearance:   none;
+    appearance:        none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+}
+
+
+.wrapper .form .inputfield .input:focus,
+.wrapper .form  .custom_select select:focus{
+    border: 1px solid #1c322f;
+    background: #f2ffeb;
+}
+
+
+.wrapper .form .inputfield .btn{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    background: rgba(28, 50, 47, 0.94);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 4px;
+}
+
+.wrapper .form .inputfield .btn:hover{
+    background: #d6b989;
+    color: #133c3b;
+}
+
+.wrapper .form .inputfield:last-child{
+    margin-bottom: 0;
+}
+
+@media (max-width:420px) {
+    .wrapper .form .inputfield{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .wrapper .form .inputfield label{
+        margin-bottom: 5px;
+    }
+
+}
+/*checkout*/
+.captcha {
+
+    background-color:#f9f9f9;
+    border:2px solid #d3d3d3;
+    border-radius:5px;
+    color: #4c4a4b;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+@media screen and (max-width: 500px) {
+    .captcha {
+        flex-direction:column;
+    }
+    .not {
+        margin:.5em!important;
+        text-align:center;
+    }
+    .logo-re {
+        align-self: center!important;
+    }
+    .spinner {
+        margin:2em .5em .5em .5em!important;
+    }
+}
+
+.captcha .not p {
+    font-size:1em;
+    font-weight:500;
+    margin-right:1em;
+    color: #0d322f;
+}
+.spinner {
+    position:relative;
+    width:2em;
+    height:2em;
+    display:flex;
+    margin:2em 1em;
+    align-items:center;
+    justify-content:center;
+}
+input[type="checkbox"] { position: absolute; opacity: 0; z-index: -1; }
+input[type="checkbox"]+.checkmark {
+    display:inline-block;
+    width:2em;
+    height:2em;
+    background-color:#fcfcfc;
+    border:2.5px solid #c3c3c3;
+    border-radius:3px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor: pointer;
+}
+input[type="checkbox"]+.checkmark span {
+    content:'';
+    position:relative;/*
+	position:absolute;
+	border-bottom:3px solid;
+	border-right:3px solid;
+	border-color:#029f56;*/
+    margin-top:-3px;
+    transform:rotate(45deg);
+    width:.75em;
+    height:1.2em;
+    opacity:0;
+}
+input[type="checkbox"]+.checkmark>span:after {
+    content:'';
+    position:absolute;
+    display:block;
+    height:3px;
+    bottom:0;left:0;
+    background-color:#029f56;
+}
+input[type="checkbox"]+.checkmark>span:before {
+    content:'';
+    position:absolute;
+    display:block;
+    width:3px;
+    bottom:0;right:0;
+    background-color:#029f56;
+}
+input[type="checkbox"]:checked+.checkmark {
+    animation:2s spin forwards;
+}
+input[type="checkbox"]:checked+.checkmark>span {
+    animation:1s fadein 1.9s forwards;
+}
+input[type="checkbox"]:checked+.checkmark>span:after {animation:.3s bottomslide 2s forwards;}
+input[type="checkbox"]:checked+.checkmark>span:before {animation:.5s rightslide 2.2s forwards;}
+@keyframes fadein {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes bottomslide {
+    0% {width:0;}
+    100% {width:100%;}
+}
+@keyframes rightslide {
+    0% {height:0;}
+    100% {height:100%;}
+}
+.captcha .logo-re {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    height:100%;
+    align-self:flex-end;
+    margin:0.5em 1.5em;
+}
+.logo-re img {
+    height:2em;
+    width:2em;
+}
+.logo-re p {
+    color:#9d9ba7;
+    margin:0;
+    font-size:1em;
+    font-weight:700;
+    margin:.4em 0 .2em 0;
+}
+.logo-re small {
+    color:#9d9ba7;
+    margin:0;
+    font-size:.8em;
+}
+@keyframes spin {
+    10% {
+        width:0;
+        height:0;
+        border-width:6px;
+    }
+    30% {
+        width:0;
+        height:0;
+        border-radius:50%;
+        border-width:1em;
+        transform: rotate(0deg);
+        border-color:rgb(199,218,245);
+    }
+    50% {
+        width:2em;
+        height:2em;
+        border-radius:50%;
+        border-width:4px;
+        border-color:rgb(199,218,245);
+        border-right-color:rgb(89,152,239);
+    }
+    70% {
+        border-width:4px;
+        border-color:rgb(199,218,245);
+        border-right-color:rgb(89,152,239);
+    }
+    90% {
+        border-width:4px;
+    }
+    100% {
+        width:2em;
+        height:2em;
+        border-radius:50%;
+        transform: rotate(720deg);
+        border-color:transparent;
+    }
+}
+::selection {
+    background-color:transparent;
+    color:teal;
+}
+::-moz-selection {
+    background-color:transparent;
+    color:teal;
+}
