@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap" rel="stylesheet">
+    <title>مشروع الرحاب رويال 2</title>
+    <link rel="stylesheet" id="googlefonts-css" href="https://fonts.googleapis.com/css?family=Tajawal:400&amp;subset=latin" type="text/css" media="all">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <link rel="stylesheet" href="app/css/style.css">
+    <link rel="stylesheet" href="app/css/book.css">
+</head>
+<body>
+ <header>
+     <nav style=" position: inherit">
+         <a href="#"><img src="img/LOGO.svg" alt="logo" style="width: 220px ; height: 100px"></a>
+
+         <ul class="menu">
+             <li class="item"><a href="index.html">الصفحة الرئيسية</a></li>
+             <li class="item"><a href="index.html#whoAreWe">من نحن</a></li>
+             <li class="item"><a href="profile.html">الرحاب رويال</a></li>
+             <li class="item button"><a href="#">حجز شقة</a></li>
+             <li class="item button secondary"><a href="index.html#contact-form">تواصل معنا</a></li>
+             <li class="toggle"><span class="bars"></span></li>
+         </ul>
+     </nav>
+    </header>
+ <section>
+        <div class="wrapper">
+            <div class="title">حجز شقة</div>
+            <form class="form" onsubmit="isSubmitted()">
+                <div class="inputfield">
+                    <label>اسم العقار
+                    <select  class="input">
+                        <option></option>
+                        <option>الرحاب رويال </option>
+                        <option>الرحاب رويال </option>
+                        <option>الرحاب رويال </option>
+                    </select>
+                    </label>
+                </div>
+                <div class="inputfield">
+                    <label>رقم الشقة
+                     <select  class="input">
+                        <option></option>
+                        <option>01</option>
+                        <option>01</option>
+                        <option>01</option>
+                     </select>
+                    </label>
+                </div>
+                <div class="inputfield">
+                    <label>الاسم الشخصي
+                    <input type="text" class="input" required/></label>
+                </div>
+                <div class="inputfield">
+                    <label>الايميل
+                    <input type="email" class="input"required/></label>
+                </div>
+                <div class="inputfield">
+                    <label>الجوال
+                        <input type="email" class="input"required/>
+                    </label>
+                </div>
+                <div class="captcha">
+                    <div class="spinner">
+                        <label>
+                            <input type="checkbox" onclick="$(this).attr('disabled','disabled');">
+                            <span class="checkmark"><span>&nbsp;</span></span>
+                        </label>
+                    </div>
+                    <div class="not">
+                        <p>
+                        انا لست روبوت</p>
+                    </div>
+                    <div class="logo-re">
+                        <img src="https://forum.nox.tv/core/index.php?media/9-recaptcha-png/"/>
+                        <p>reCAPTCHA</p>
+                        <small>Privacy - Terms</small>
+                    </div>
+                </div>
+            <div class="inputfield">
+                <input type="submit" value="حجز الان" class="btn">
+            </div>
+        </form>
+        </div>
+    </section>
+ <footer>
+     <div class="main-content">
+
+         <div class="right box">
+             <h2>مقدمة</h2>
+             <div class="content">
+                 <p>نـواكب الـتطـور وننـظر بـثـقه نحو الأمام . ولكي نبنـي حجر الأساس نوظـف
+                     الخـبرات والمـهـارات التي تؤهلنا أن نكون رواد التقدم المعماري . و استمرارا لنهج
+                     مؤسسة سليمان بن عبدالله الفايزي العقارية التي تعمل على تطوير وتنفيذ
+                     المشاريع العقارية المميزة والفريدة نقدم لكم مشروع الرحاب رويال  </p>
+                 <div class="social">
+                     <a href="#"><span class="fab fa-facebook-f"></span></a>
+                     <a href="#"><span class="fab fa-twitter"></span></a>
+                     <a href="#"><span class="fab fa-instagram"></span></a>
+                     <a href="#"><span class="fab fa-youtube"></span></a>
+                 </div>
+             </div>
+
+         </div>
+
+         <div class="center box">
+             <h2>العنوان</h2>
+             <div class="content">
+                 <div class="place">
+                     <span class="fas fa-map-marker-alt"></span>
+                     <span class="text">فلسطين-غزة</span>
+                 </div>
+                 <div class="phone">
+                     <span class="fas fa-phone-alt"></span>
+                     <span class="text">+00972-333333</span>
+                 </div>
+                 <div class="email">
+                     <span class="fas fa-envelope"></span>
+                     <span class="text">test@example.com</span>
+                 </div>
+             </div>
+
+         </div>
+
+     </div>
+
+ </footer>
+ <script src="app/js/script.js"></script>
+</body>
+</html>
