@@ -40,6 +40,9 @@ nav {
     display: flex;
     z-index: 1000;
 }
+.logo-img{
+    max-width: 170px;max-height: 100px; width: 100%; height: 100px;
+}
 ul {
     list-style-type: none;
 }
@@ -137,6 +140,7 @@ div.button a {
 
 /* Tablet menu */
 @media  (max-width: 1280px)  {
+
     .menu {
         justify-content: center;
         right: auto;
@@ -194,7 +198,58 @@ div.button a {
         position: unset;
     }
 }
-
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px)
+and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
+{
+ nav{
+     height: 50px;
+ }
+ .logo-img{
+     max-width: 80px;
+     max-height: 70px;
+ }
+    div.button a {
+        padding: 0 5px;
+        font-size: 10px;
+        border: 1px #CEAF87 solid;
+        border-radius: 10px;
+        position: absolute;
+        float: right;
+        left: 15px;
+        margin-top: 22px
+}
+    .menu a{
+        font-size: 10px;
+        background-color: rgba(19, 60, 59, 0.24);
+    }
+    .left-text{
+        left: 10px;
+        width: 100px;
+    }
+}
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
+    nav{
+    height: 50px;
+}
+    .logo-img{
+        max-width: 80px;
+        max-height: 70px;
+    }
+    div.button a {
+        padding: 0 5px;
+        font-size: 10px;
+        border: 1px #CEAF87 solid;
+        border-radius: 10px;
+        position: absolute;
+        float: right;
+        left: 15px;
+        margin-top: 22px
+    }
+    .menu a{
+        font-size: 10px;
+        background-color: rgba(19, 60, 59, 0.24);
+    }
+}
 /*SLIDER IMG*/
 
 .mySlides {
@@ -224,6 +279,8 @@ div.button a {
     .mySlides{
         width: 100%;
         height: unset;
+        outline: 2px solid #CEAF87;
+        outline-offset:-40px;
     }
 }
 
@@ -342,7 +399,6 @@ svg{
     fill: #CEAF87;
     transition: transform 0.3s;
 }
-
 .en-text{
     direction: ltr;
     float: right;
