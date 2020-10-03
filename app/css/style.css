@@ -426,7 +426,7 @@ svg{
     .section-title p{
         position: absolute;
         margin: 55px 0;
-        padding: 127px 0 -7px 113px;
+        /*padding: 127px 0 -7px 113px;*/
         line-height: 23px;
         font-size: 17px;
     }
