@@ -36,7 +36,6 @@ body{
 nav {
     position: absolute;
     background: rgba(16, 11, 11, 0.71);
-    padding: 0 5px;
     width: 100%;
     display: flex;
     z-index: 1000;
@@ -46,24 +45,21 @@ ul {
 }
 .menu a {
     padding: 0 5px;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 17px;
     color: white;
     text-decoration: none;
 }
 .menu a:hover {
     background-color: #CEAF88;
-    text-decoration: none;
     border: 1px solid #0000006e;
 }
 .menu{
     position: relative;
     right: 250px;
 }
-.menu li {
-    font-size: 18px;
-}
 .menu li span{
-    padding: 0 5px;
+    padding: 0 -4px;
     color: #CEAF87;
 }
 
@@ -74,28 +70,13 @@ div.button a {
     border-radius: 15px;
     position: absolute;
     float: right;
-    right: 1281px;
+    left: 100px;
     margin-top: 35px;
 }
 
 .toggle a {
     font-size: 20px;
 }
-
-.sticky{
-    background-color:rgba(0,0,0,0.9);
-    padding: 18px 0;
-}
-
-
-nav .sticky  a{
-    color: #fff;
-}
-
-.sticky .toggle span{
-    background-color: #111;
-}
-
 
 /* Mobile menu */
 .menu {
@@ -104,15 +85,18 @@ nav .sticky  a{
     justify-content: space-between;
     align-items: center;
 }
+
 .toggle {
     order: 1;
 }
 .item.button {
     order: 2;
-    /*float: right;*/
+    float: left;
+    display: unset;
 }
+
 .item {
-    /*float: right;*/
+    float: right;
     width: 100%;
     text-align: center;
     order: 3;
@@ -134,7 +118,7 @@ nav .sticky  a{
     transition: background .2s ease-out;
     width: 18px;
 }
-.bars:before,
+.bars:before ,
 .bars:after {
     background: #999;
     content: '';
@@ -152,36 +136,27 @@ nav .sticky  a{
 }
 
 /* Tablet menu */
-@media all and (min-width: 468px) {
+@media  (max-width: 1280px)  {
     .menu {
         justify-content: center;
+        right: auto;
     }
 
     .logo {
         flex: 1;
     }
-
-
     div.button a {
-        padding: 5px 20px;
+        padding: 0 10px;
         border: 1px #CEAF87 solid;
         border-radius: 15px;
         position: absolute;
         float: right;
-        right: 1281px;
+        left: 20px;
         margin-top: 35px;
     }
     .toggle {
         order: 2;
     }
-
-    /*.button a {*/
-    /*    padding: 0 20px;*/
-    /*    border: 1px #CEAF87  solid;*/
-    /*    border-radius:15px;*/
-    /*    position: relative;*/
-    /*    right: 650px;*/
-    /*}*/
 
     .button a:hover {
         text-decoration: none;
@@ -212,19 +187,19 @@ nav .sticky  a{
         order: 2;
     }
     .menu li {
-        padding: 15px 10px;
+        padding: 10px 7px;
     }
     .button {
         padding-right: 0;
         position: unset;
     }
 }
+
 /*SLIDER IMG*/
 .mySlides {
     display:none;
     height: 100vh;
 }
-
 @media only screen and (max-width: 600px){
    .w3-content{
        max-width:100%;
@@ -234,6 +209,7 @@ nav .sticky  a{
         height: unset;
     }
 }
+
 @media only screen and (max-width: 1024px){
    .w3-content{
        max-width:100%;
@@ -268,7 +244,6 @@ nav .sticky  a{
 
 
 /******************  Second-Section */
-
 section.inner-we {
     background-color: white;
     width: 100%;
@@ -281,6 +256,7 @@ section.inner-we {
     text-align: center;
     direction: rtl;
     position: relative;
+    height: 500px;
 }
 .inner-we .one{
     text-align: center;
@@ -292,20 +268,21 @@ section.inner-we {
     grid-gap: 35px;
     justify-self: center;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    padding: 30px 30px;
-
+    position: relative;
+    height: 90%;
 }
 .logo-text{
-    height: 300px;
+    height: 250px;
     border: 1px solid #CEAF87;
-    bottom: 150px;
+    width: 250px;
+    margin: 50px;
 }
 .left-text{
-    width:350px;
-    height: 300px;
-    top: 150px;
+    width: 350px;
+    font-size: 12px;
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
 }
 .inner-we .two{
     height: 100%;
@@ -313,11 +290,11 @@ section.inner-we {
 }
 .inner-we .two img {
     max-width: 372px;
-    max-height: 435px;
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-clip-path: polygon(0 0, 0 900px, 300px 0, 300px 0);
+    left: 0;
 }
 .section-title{
     height:200px;
@@ -348,12 +325,102 @@ svg{
     transition: transform 0.3s;
 }
 
+.en-text{
+    direction: ltr;
+    float: right;
+    /*padding: 10px 5px;*/
+    margin-right: 50px;
+}
+@media screen and (max-width: 880px) {
+    section.inner-we{
+        grid-template-columns: 1fr;
+    }
+    section.inner-we .one{
+        grid-template-columns: 1fr;
+        height: unset;
+    }
+    .logo-text{
+        height: 150px;
+        border: 1px solid #CEAF87;
+        width: 150px;
+        margin: 25px;
+    }
+    .left-text{
+        width: 150px;
+        font-size: 8px;
+        position: absolute;
+        left: 120px;
+        bottom: 10px;
+    }
+    .inner-we .two{
+        position: unset;
+        margin-top: -60px;
+        height: 118%;
+    }
+    .inner-we .two img{
+        max-width: 372px;
+        width: 50%;
+        height: 50%;
+        -webkit-clip-path: polygon(0 0, 0 450px, 150px 0, 150px 0);
+    }
+    .section-title{
+    font-size: 10px;
+    }
+
+    .section-title p{
+        margin: 50px 0;
+        line-height: 20px;
+        font-size: 10px;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    section.inner-we{
+        grid-template-columns: 1fr;
+        height: unset;
+    }
+    section.inner-we .one{
+        grid-template-columns: 1fr;
+        height: unset;
+        margin: 0 0 30px 0 ;
+    }
+    .logo-text{
+        height: 200px;
+        border: 1px solid #CEAF87;
+        width: 200px;
+        margin: 25px;
+    }
+    .left-text{
+        width: 300px;
+        font-size: 15px;
+        position: absolute;
+        left: 100px;
+        bottom: 10px;
+    }
+    .inner-we .two{
+        margin-top: -60px;
+        height: unset;
+    }
+
+    .section-title{
+        height:230px;
+        width:410px;
+
+    }
+
+    .section-title p{
+        position: absolute;
+        margin: 55px 0;
+        padding: 127px 0 -7px 113px;
+        line-height: 23px;
+        font-size: 17px;
+    }
+
+}
 /*CONTACT FORM*/
 
 .contact-box{
     width: 100%;
-    max-width: 1200px;
-    max-height: 1200px;
     display: grid;
     grid-gap: 30px;
     justify-self: center;
@@ -361,24 +428,24 @@ svg{
     justify-content: center;
     align-items: center;
     text-align: center;
-    box-shadow: 0 0 19px 5px rgba(0,0,0,0.19);
     direction: rtl;
     padding: 2px;
 }
 
-.form , .mapLocation{
+.form-contant , .mapLocation{
+    position: relative;
+    border: 1px solid #CEAF87;
+    border-radius: 10px;
+    padding: 20px 40px;
+}
+
+.form-contant , .mapLocation{
     position: relative;
     border: 1px solid #CEAF87;
     padding: 20px 40px;
 }
 
-.form , .mapLocation{
-    position: relative;
-    border: 1px solid #CEAF87;
-    padding: 20px 40px;
-}
-
-.form .submit-form ,
+.form-contant .submit-form ,
 .mapLocation .mapLocation-btn{
     position: absolute;
     width: 20%;
@@ -386,12 +453,13 @@ svg{
     text-align: center;
     background-color: #CEAF87;
     color: #113c24;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border: none;
     border-radius: 10px;
     outline: none;
     cursor: pointer;
     transition: .3s;
+    padding: 5px 5px;
 }
 .left-form h2{
     float: right;
@@ -439,14 +507,6 @@ svg{
 
 
 
-
-
-
-
-
-
-
-
 /************FOOTER*/
 footer{
     background:linear-gradient( to left , rgba(4, 13, 13, 0.98), rgba(19, 60, 59, 0.9));
@@ -469,7 +529,7 @@ footer:before {
     top : 0;
     height : 15px;
     width : 80%;
-    border-top:3px solid #CEAF87;
+    border-top:5px solid #CEAF87;
 }
 footer .leftFooter,
 footer .rightFooter,
