@@ -196,6 +196,10 @@ div.button a {
 }
 
 /*SLIDER IMG*/
+.border-slide{
+    position: relative;
+    border: 1px solid #CEAF87;
+}
 .mySlides {
     display:none;
     height: 100vh;
@@ -524,8 +528,9 @@ svg{
 
 /************FOOTER*/
 footer{
-    background:linear-gradient( to left , rgba(4, 13, 13, 0.98), rgba(19, 60, 59, 0.9));
+    /*background:linear-gradient( to left , rgba(64, 81, 83, 0.98), rgba(19, 60, 59, 0.9));*/
     /*border-top: 5px solid #CEAF87;*/
+    background-color: rgba(28, 50, 47, 0.43);
     bottom: 0;
     color: rgba(255, 255, 255, 0.95);
     height: auto;
