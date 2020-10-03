@@ -198,21 +198,24 @@ div.button a {
 /*SLIDER IMG*/
 
 .mySlides {
-    position: relative;
+    /*position: relative;*/
     display:none;
     height: 100vh;
+    outline: 2px solid #CEAF87;
+    outline-offset:-70px;
+
 }
-.mySlides:before{
-    position: absolute;
-    content: '';
-    top: 30px;
-    bottom: 30px;
-    left: 30px;
-    right: -30px;
-    border: 10px solid #CEAF87;
-    width: 100%;
-    height: 100%;
-}
+/*.mySlides:before{*/
+/*    position: absolute;*/
+/*    content: '';*/
+/*    top: 30px;*/
+/*    bottom: 30px;*/
+/*    left: 30px;*/
+/*    right: -30px;*/
+/*    border: 10px solid #CEAF87;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*}*/
 
 @media only screen and (max-width: 600px){
    .w3-content{
