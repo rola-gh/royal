@@ -408,7 +408,7 @@ svg{
 @media screen and (max-width: 880px) {
     section.inner-we{
         grid-template-columns: 1fr;
-        height: 550px;
+        height: 580px;
     }
     section.inner-we .one{
         grid-template-columns: 1fr;
