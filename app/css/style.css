@@ -28,20 +28,22 @@ body{
     text-decoration: none;
 }
 
-
 .main_container{
     margin: -20px auto;
 }
 /*NAV BAR********************/
 nav {
     position: absolute;
-    background: rgba(16, 11, 11, 0.71);
+    background: rgba(16, 11, 11, 0.68);
     width: 100%;
     display: flex;
     z-index: 1000;
+    padding: 15px 15px 0 0;
+
 }
 .logo-img{
-    max-width: 170px;max-height: 100px; width: 100%; height: 100px;
+    width: 90px;
+    padding: 15px 5px;
 }
 ul {
     list-style-type: none;
@@ -59,7 +61,7 @@ ul {
 }
 .menu{
     position: relative;
-    right: 250px;
+    right: 300px;
 }
 .menu li span{
     padding: 0 -4px;
@@ -68,9 +70,9 @@ ul {
 
 div.button a {
     color: white;
-    padding: 5px 20px;
+    padding: 2px 20px;
     border: 1px #CEAF87 solid;
-    border-radius: 15px;
+    border-radius: 20px;
     position: absolute;
     float: right;
     left: 100px;
@@ -202,7 +204,7 @@ div.button a {
 and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
 {
  nav{
-     height: 50px;
+     height: 65px;
  }
  .logo-img{
      max-width: 80px;
@@ -229,11 +231,11 @@ and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
 }
 @media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
     nav{
-    height: 50px;
+    height: 65px;
 }
     .logo-img{
-        max-width: 80px;
-        max-height: 70px;
+        width: 60px;
+        padding: 5px 10px;
     }
     div.button a {
         padding: 0 5px;
@@ -253,25 +255,15 @@ and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
 /*SLIDER IMG*/
 
 .mySlides {
-    /*position: relative;*/
     display:none;
     height: 100vh;
     outline: 2px solid #CEAF87;
-    outline-offset:-70px;
+    outline-offset:-40px;
 
 }
-/*.mySlides:before{*/
-/*    position: absolute;*/
-/*    content: '';*/
-/*    top: 30px;*/
-/*    bottom: 30px;*/
-/*    left: 30px;*/
-/*    right: -30px;*/
-/*    border: 10px solid #CEAF87;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*}*/
-
+.logo-border{
+    width: 100px;position: absolute;bottom: 12%;left: 4%;
+}
 @media only screen and (max-width: 600px){
    .w3-content{
        max-width:100%;
@@ -350,6 +342,7 @@ section.inner-we {
     border: 1px solid #CEAF87;
     width: 250px;
     margin: 50px;
+    padding: 20px;
 }
 .left-text{
     width: 350px;
@@ -460,6 +453,18 @@ svg{
         font-size: 10px;
         padding: 10px 20px 0 10px;
 
+    }
+    .en-text p{
+        margin: 59px 31px;
+        line-height: 20px;
+        font-size: 8px;
+    }
+    .logo-border{
+        width: 57px;
+        position: absolute;
+        bottom: 70%;
+        left: 13%;
+        /*position: fixed;*/
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -597,10 +602,8 @@ svg{
 
 /************FOOTER*/
 footer{
-    /*background:linear-gradient( to left , rgba(64, 81, 83, 0.98), rgba(19, 60, 59, 0.9));*/
-    /*border-top: 5px solid #CEAF87;*/
     background-color: rgba(28, 50, 47, 0.43);
-    bottom: 0;
+    bottom: -50px;
     color: rgba(255, 255, 255, 0.95);
     height: auto;
     text-align: center;
