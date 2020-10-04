@@ -262,7 +262,7 @@ and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
 
 }
 .logo-border{
-    width: 100px;position: absolute;bottom: 12%;left: 4%;
+    width: 120px;position: absolute;bottom: 12%;left: 4%;
 }
 @media only screen and (max-width: 600px){
    .w3-content{
@@ -322,7 +322,7 @@ section.inner-we {
     text-align: center;
     direction: rtl;
     position: relative;
-    height: 500px;
+    height: 540px;
 }
 .inner-we .one{
     text-align: center;
@@ -355,6 +355,7 @@ section.inner-we {
     padding-bottom: 10px;
 }
 .inner-we .two{
+    display: flex;
     height: 100%;
     position: relative;
 }
@@ -367,7 +368,7 @@ section.inner-we {
     left: 0;
 }
 .ar-text{
-    width:400px;
+    width:350px;
 }
 .section-title{
     display:flex;
@@ -380,7 +381,7 @@ section.inner-we {
     color:#CEAF87;
     font-size: 25px;
     /*padding:30px 30px;*/
-    margin: 70px 0;
+   margin: 70px 0;
 }
 .section-title p{
     color: #000000e0;
@@ -417,108 +418,105 @@ svg{
     }
     section.inner-we .one{
         grid-template-columns: 1fr;
-        height: unset;
-        margin: 0 0 -15px 0;
-        width: 85%;
+        margin: -5px 0 0 0;
+        width: 95%;
     }
     .logo-text{
-        height: 150px;
+        height: 100px;
         border: 1px solid #CEAF87;
         width: 120px;
         margin: 15px 26px;
     }
     .left-text{
-        width: 195px;
-        font-size: 9px;
+        width: 55%;
+        font-size: 10px;
         position: absolute;
         left: 0;
-        bottom: 10px;
-        padding: 5px;
+        bottom: -25px;
+        padding: 8px;
     }
     .inner-we .two{
         position: unset;
-        margin-top: -70px;
-        height: unset;
+        margin-top: -114px;
     }
-    .inner-we .two img{
-        max-width: 372px;
-        width: 100%;
-        height: 50%;
-        -webkit-clip-path: polygon(0 0, 0 450px, 150px 0, 150px 0);
+    .ar-text{
+        width:60%;
     }
-    .ar-text .section-title{
-        height: unset;
-        width: 60%;
-        top:-50px;
-        position: relative;
-        margin: -45px 18px -3px 0 ;
-    }
-    .section-title h2{
-    font-size: 12px;
-    }
+        .inner-we .two img{
+            max-width: 372px;
+            width: 100%;
+            height: 50%;
+            -webkit-clip-path: polygon(0 0, 0 450px, 150px 0, 150px 0);
+        }
+        .ar-text .section-title{
+            position: relative;
+            margin: -46px 18px -3px 0;
+        }
+        .section-title h2{
+        font-size: 12px;
+        }
 
-    .section-title p{
-        margin: 35px 0;
-        line-height: 20px;
-        font-size: 10px;
-        padding: 60px 5px 0 0;
-    }
-    .en-text .section-title {
-        top:-50px;
-        position: relative;
-    }
-    .en-text h2{
-        position: inherit;
-        margin: 50px 47px 0 -43px;
-    }
-    .en-text p {
-        margin: 33px 0;
-        line-height: 16px;
-        font-size: 10px;
-        padding: 42px 0 0 95px;
-        text-align: center;
-        width: 97%;
-    }
-    .logo-border{
-        width: 57px;
-        position: absolute;
-        bottom: 70%;
-        left: 13%;
-        /*position: fixed;*/
+        .ar-text p{
+            margin: 40px 0;
+            line-height: 20px;
+            font-size: 10px;
+            padding: 55px 0 0 0;
+        }
+        .en-text .section-title {
+            top: -15px;
+            position: relative;
+        }
+        .en-text h2{
+            position: inherit;
+            margin: 52px 21px 0 -35px;
+        }
+        .en-text p {
+            margin: 23px 0;
+            left: 105px;
+            line-height: 20px;
+            font-size: 10px;
+            padding: 55px 0 0 0;
+        }
+        .logo-border{
+            width: 57px;
+            position: absolute;
+            bottom: 70%;
+            left: 13%;
+            /*position: fixed;*/
     }
     }
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
     section.inner-we{
         grid-template-columns: 1fr;
-        height: 650px;
+        height: 688px;
     }
     section.inner-we .one{
         grid-template-columns: 1fr;
-        height: unset;
-        margin: 0 0 -15px 0;
+        margin: -5px 0 0 0;
         width: 95%;
     }
     .logo-text{
-        height: 170px;
+        height: 125px;
         border: 1px solid #CEAF87;
-        width: 235px;
+        width: 170px;
         margin: 15px 26px;
     }
     .left-text{
-        width: 65%;
-        font-size: 16px;
+        width: 475px;
+        font-size: 18px;
         position: absolute;
-        left: 60px;
-        bottom: 10px;
-        padding: 0;
+        left: 18px;
+        bottom: -23px;
+        padding: 7px;
     }
-    .inner-we .two{
-        position: unset;
-        margin-top: -100px;
-        height: unset;
-    }
+    /*.inner-we .two{*/
+    /*    position: unset;*/
+    /*    margin-top: -100px;*/
+    /*    height: unset;*/
+    /*}*/
     .inner-we .two img{
         max-width: 372px;
         width: 100%;
@@ -526,14 +524,11 @@ svg{
         -webkit-clip-path: polygon(0 0, 0 900px, 300px 0, 300px 0);
     }
     .ar-text{
-        width: 30%;
+        width: 65%;
     }
     .ar-text .section-title{
-        height: unset;
-        width: 120%;
-        top:-50px;
-        position: relative;
-        margin: -45px 18px -3px 0 ;
+        width: 135%;
+        top: -14px;
     }
     .section-title h2{
         font-size: 17px;
@@ -546,12 +541,12 @@ svg{
         padding: 60px 115px 0 0;
     }
     .en-text .section-title {
-        top:-50px;
+        top:-24px;
         position: inherit;
     }
     .en-text{
         float: left;
-        left: 170px;
+        left: -112px;
     }
     .en-text h2{
         position: inherit;
@@ -561,14 +556,14 @@ svg{
         margin: -22px 0;
         line-height: 20px;
         font-size: 17px;
-        padding: 102px 0 0 55px;
+        padding: 105px 21px 0 0;
         text-align: center;
-        width: 90%;
+        width: 100%;
     }
     .logo-border {
         width: 85px;
         position: absolute;
-        bottom: 51%;
+        bottom: 55%;
         left: 7%;
     }
 }
@@ -665,7 +660,7 @@ svg{
 /************FOOTER*/
 footer{
     background-color: rgba(28, 50, 47, 0.43);
-    bottom: -50px;
+    bottom: -150px;
     color: rgba(255, 255, 255, 0.95);
     height: auto;
     text-align: center;
