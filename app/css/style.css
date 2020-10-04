@@ -42,8 +42,8 @@ nav {
 
 }
 .logo-img{
-    width: 90px;
-    padding: 15px 5px;
+    width: 100px;
+    padding: 15px 10px;
 }
 ul {
     list-style-type: none;
@@ -314,7 +314,7 @@ section.inner-we {
     background-color: white;
     width: 100%;
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 50px;
     justify-self: center;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
@@ -346,13 +346,15 @@ section.inner-we {
 }
 .left-text{
     width: 350px;
-    font-size: 12px;
+    font-size: 14px;
     position: absolute;
     left: 20px;
-    bottom: 10px;
+    bottom: 15px;
+}
+.left-text p {
+    padding-bottom: 10px;
 }
 .inner-we .two{
-
     height: 100%;
     position: relative;
 }
@@ -361,12 +363,13 @@ section.inner-we {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-clip-path: polygon(0 0, 0 900px, 300px 0, 300px 0);
+    -webkit-clip-path: polygon(0 0, 0 1200px, 300px 0, 300px 0);
     left: 0;
 }
-.section-title{
-    height:200px;
+.ar-text{
     width:400px;
+}
+.section-title{
     display:flex;
     flex-direction:row;
     justify-content:center;
@@ -380,12 +383,12 @@ section.inner-we {
     margin: 70px 0;
 }
 .section-title p{
-    color: #000;
+    color: #000000e0;
     position: absolute;
-    margin: 55px 0;
-    padding: 75px 80px 0 0;
+    /* margin: 55px 0; */
+    padding: 120px 85px 0 0;
     line-height: 23px;
-    font-size: 15px;
+    font-size: 12px;
 }
 svg{
     stroke: #CEAF87;
@@ -395,35 +398,46 @@ svg{
 .en-text{
     direction: ltr;
     float: right;
-    /*padding: 10px 5px;*/
-    margin-right: 50px;
+    position: relative;
+
 }
+.en-text h2{
+    position: inherit;
+    margin: 79px 47px 0 -43px;
+}
+.en-text p {
+    position: absolute;
+    padding: 130px 100px;
+    text-align: initial
+}
+
 @media screen and (max-width: 880px) {
     section.inner-we{
         grid-template-columns: 1fr;
-        height: 580px;
     }
     section.inner-we .one{
         grid-template-columns: 1fr;
         height: unset;
-        margin: 0 2px 10px 0;
+        margin: 0 0 -15px 0;
+        width: 85%;
     }
     .logo-text{
         height: 150px;
         border: 1px solid #CEAF87;
-        width: 150px;
-        margin: 25px;
+        width: 120px;
+        margin: 15px 26px;
     }
     .left-text{
-        width: 165px;
-        font-size: 8px;
+        width: 195px;
+        font-size: 9px;
         position: absolute;
-        left: 17px;
+        left: 0;
         bottom: 10px;
+        padding: 5px;
     }
     .inner-we .two{
         position: unset;
-        margin-top: -40px;
+        margin-top: -70px;
         height: unset;
     }
     .inner-we .two img{
@@ -432,32 +446,38 @@ svg{
         height: 50%;
         -webkit-clip-path: polygon(0 0, 0 450px, 150px 0, 150px 0);
     }
-    .section-title{
+    .ar-text .section-title{
         height: unset;
         width: 60%;
+        top:-50px;
+        position: relative;
+        margin: -45px 18px -3px 0 ;
     }
     .section-title h2{
-    font-size: 15px;
+    font-size: 12px;
     }
 
     .section-title p{
-        margin: 50px 0;
+        margin: 35px 0;
         line-height: 20px;
         font-size: 10px;
         padding: 60px 5px 0 0;
     }
-    .en-text{
-        margin-left:70px;
-        margin-right: unset;
-        line-height: 20px;
-        font-size: 10px;
-        padding: 10px 20px 0 10px;
-
+    .en-text .section-title {
+        top:-50px;
+        position: relative;
     }
-    .en-text p{
-        margin: 59px 31px;
-        line-height: 20px;
-        font-size: 8px;
+    .en-text h2{
+        position: inherit;
+        margin: 50px 47px 0 -43px;
+    }
+    .en-text p {
+        margin: 33px 0;
+        line-height: 16px;
+        font-size: 10px;
+        padding: 42px 0 0 95px;
+        text-align: center;
+        width: 97%;
     }
     .logo-border{
         width: 57px;
@@ -466,49 +486,91 @@ svg{
         left: 13%;
         /*position: fixed;*/
     }
-}
+    }
+
+
 @media (min-width: 768px) and (max-width: 1024px) {
     section.inner-we{
         grid-template-columns: 1fr;
-        height: unset;
+        height: 650px;
     }
     section.inner-we .one{
         grid-template-columns: 1fr;
         height: unset;
-        margin: 0 0 30px 0 ;
+        margin: 0 0 -15px 0;
+        width: 95%;
     }
     .logo-text{
-        height: 200px;
+        height: 170px;
         border: 1px solid #CEAF87;
-        width: 200px;
-        margin: 25px;
+        width: 235px;
+        margin: 15px 26px;
     }
     .left-text{
-        width: 300px;
-        font-size: 15px;
+        width: 65%;
+        font-size: 16px;
         position: absolute;
-        left: 100px;
+        left: 60px;
         bottom: 10px;
+        padding: 0;
     }
     .inner-we .two{
-        margin-top: -60px;
+        position: unset;
+        margin-top: -100px;
         height: unset;
     }
-
-    .section-title{
-        height:230px;
-        width:410px;
-
+    .inner-we .two img{
+        max-width: 372px;
+        width: 100%;
+        height: 50%;
+        -webkit-clip-path: polygon(0 0, 0 900px, 300px 0, 300px 0);
     }
-
-    .section-title p{
-        position: absolute;
-        margin: 55px 0;
-        /*padding: 127px 0 -7px 113px;*/
-        line-height: 23px;
+    .ar-text{
+        width: 30%;
+    }
+    .ar-text .section-title{
+        height: unset;
+        width: 120%;
+        top:-50px;
+        position: relative;
+        margin: -45px 18px -3px 0 ;
+    }
+    .section-title h2{
         font-size: 17px;
     }
 
+    .section-title p{
+        margin: 50px 0;
+        line-height: 20px;
+        font-size: 16px;
+        padding: 60px 115px 0 0;
+    }
+    .en-text .section-title {
+        top:-50px;
+        position: inherit;
+    }
+    .en-text{
+        float: left;
+        left: 170px;
+    }
+    .en-text h2{
+        position: inherit;
+        margin: 50px 47px 0 -43px;
+    }
+    .en-text p {
+        margin: -22px 0;
+        line-height: 20px;
+        font-size: 17px;
+        padding: 102px 0 0 55px;
+        text-align: center;
+        width: 90%;
+    }
+    .logo-border {
+        width: 85px;
+        position: absolute;
+        bottom: 51%;
+        left: 7%;
+    }
 }
 /*CONTACT FORM*/
 
